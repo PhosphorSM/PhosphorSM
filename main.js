@@ -1,8 +1,6 @@
+require('dotenv').config()
 const http = require("http");
 const fs = require('fs').promises;
-
-const host = 'goodpro.ddns.net';
-const port = 8080;
 
 let indexFile;
 
@@ -17,8 +15,8 @@ const server = http.createServer(requestListener);
 fs.readFile(__dirname + "/index.html")
     .then(contents => {
         indexFile = contents;
-        server.listen(port, host, () => {
-            console.log(`Server is running on http://${host}:${port}`);
+        server.listen(process.env.PORT, process.env.HOST, () => {
+            console.log(`Server is running on http://${process.env.HOST}:${process.env.PORT}`);
         });
     })
     .catch(err => {

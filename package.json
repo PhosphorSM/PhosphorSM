@@ -1,0 +1,27 @@
+{
+  "name": "phosphor",
+  "version": "1.0.0",
+  "description": "Innovative school manager",
+  "main": "main.js",
+  "dependencies": {
+    "dotenv": "^10.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PhosphorSM/Phosphor.git"
+  },
+  "keywords": [
+    "school",
+    "manager"
+  ],
+  "author": "GoodPro712, teaButMilk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PhosphorSM/Phosphor/issues"
+  },
+  "homepage": "https://github.com/PhosphorSM/Phosphor#readme"
+}
